@@ -36,12 +36,24 @@ alias visu='sudo vi'
 # /sbin
 alias ifconfig='/sbin/ifconfig'
 
+# grep
+alias igrep='grep -i'
+
 # history
 history() {
   if [ $# == 0 ]; then
       command history
   else
-      command history | grep "$1"
+      command history | igrep "$1"
+  fi
+}
+
+# ps
+ps() {
+  if [ $# == 0 ]; then
+      command ps aux
+  else
+      command ps aux | igrep "$1"
   fi
 }
 

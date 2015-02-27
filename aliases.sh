@@ -27,6 +27,7 @@ alias .....="cd ../../../.."
 alias apt-install='apt-get install'
 alias apt-search='apt-cache search'
 alias apt-update='apt-get update'
+alias apt-remove='apt-get purge'
 
 # sudo
 alias apt-get='sudo apt-get'

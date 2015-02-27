@@ -1,4 +1,10 @@
 SCRIPT_DIR=linux
 
-. $SCRIPT_DIR/aliases.sh
-. $SCRIPT_DIR/env.sh
+if [ -d $SCRIPT_DIR ]; then
+  for i in $SCRIPT_DIR/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi

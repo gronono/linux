@@ -5,5 +5,5 @@ My linux files
 
 	cd
 	git clone https://github.com/gronono/linux.git
-	ln -sf .bashrc linux/bashrc
+	ln -sf linux/bashrc .bashrc
 

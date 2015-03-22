@@ -33,6 +33,7 @@ alias apt-remove='apt-get purge'
 alias apt-get='sudo apt-get'
 alias reboot='sudo reboot'
 alias visu='sudo vi'
+alias service='sudo service'
 
 # /sbin
 alias ifconfig='/sbin/ifconfig'

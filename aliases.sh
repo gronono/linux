@@ -34,6 +34,7 @@ alias apt-get='sudo apt-get'
 alias reboot='sudo reboot'
 alias visu='sudo vi'
 alias service='sudo service'
+alias updatedb='sudo updatedb'
 
 # /sbin
 alias ifconfig='/sbin/ifconfig'

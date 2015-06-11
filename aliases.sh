@@ -42,6 +42,9 @@ alias ifconfig='/sbin/ifconfig'
 # grep
 alias igrep='grep -i'
 
+# uname
+alias uname='uname -a'
+
 # history
 history() {
   if [ $# == 0 ]; then

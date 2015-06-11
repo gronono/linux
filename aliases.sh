@@ -18,10 +18,11 @@ alias rm='rm -i'
 alias rmtorrent='rm -rf *.torrent'
 
 # cd
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias cd..='cd ..'
 
 # apt
 alias apt-install='apt-get install'

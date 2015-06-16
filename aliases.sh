@@ -85,3 +85,6 @@ extract () {
     echo "'$1' is not a valid file!"
   fi
 }
+
+# change le titre du terminal
+set_title() { printf "\e]2;$*\a"; }

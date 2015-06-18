@@ -1,4 +1,4 @@
-SCRIPT_DIR=linux
+SCRIPT_DIR=$HOME/linux
 
 if [ -d $SCRIPT_DIR ]; then
   for i in $SCRIPT_DIR/*.sh; do

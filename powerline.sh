@@ -1,16 +1,17 @@
 CURRENT_DIR=`pwd`
 
 #
-# https://github.com/powerline/fonts
+# https://powerline.readthedocs.org/en/latest/installation/linux.html#font-installation
 # 
 if [ ! -d "$HOME/.fonts" ]; then
 	echo "Installing powerline-fonts"
-	mkdir -p /tmp/powerline
-	cd /tmp/powerline
-	git clone https://github.com/powerline/fonts.git
-	cd fonts
-	./install.sh
-	rm -rf /tmp/powerline
+	wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf 
+	wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+	mkdir -p ~/.fonts/
+	mv PowerlineSymbols.otf ~/.fonts/
+	fc-cache -vf ~/.fonts
+	mkdir -p ~/.config/fontconfig/conf.d/
+	mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 fi
 
 #

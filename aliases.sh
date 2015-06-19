@@ -88,3 +88,6 @@ extract () {
 
 # change le titre du terminal
 set_title() { printf "\e]2;$*\a"; }
+
+# npm install global
+alias npm-install='sudo npm install -g'

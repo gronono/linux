@@ -31,6 +31,7 @@ alias apt-update='apt-get update'
 alias apt-remove='apt-get purge'
 
 # sudo
+alias sudo='sudo DISPLAY=$DISPLAY'
 alias apt-get='sudo apt-get'
 alias reboot='sudo reboot'
 alias visu='sudo vi'

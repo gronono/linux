@@ -92,3 +92,13 @@ set_title() { printf "\e]2;$*\a"; }
 
 # npm install global
 alias npm-install='sudo npm install -g'
+
+pathprepend() {
+	for ARG in "$@"
+	do
+		if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
+			PATH="$ARG${PATH:+":$PATH"}"
+		fi
+	done
+}
+

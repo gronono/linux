@@ -27,3 +27,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Custom bashcompletion dir
+if [ -d $SCRIPT_DIR/bash_completion.d ]; then
+	for i in $SCRIPT_DIR/bash_completion.d/*.bash; do
+			source $i
+	done
+	unset i
+fi
+

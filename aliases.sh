@@ -29,6 +29,7 @@ alias apt-install='apt-get install'
 alias apt-search='apt-cache search'
 alias apt-update='apt-get update'
 alias apt-remove='apt-get purge'
+alias apt-upgrade='apt-get upgrade'
 
 # sudo
 alias sudo='sudo DISPLAY=$DISPLAY'

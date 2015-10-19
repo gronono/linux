@@ -9,3 +9,4 @@ if [ -d $SCRIPT_DIR ]; then
   done
   unset i
 fi
+eval $(thefuck --alias)

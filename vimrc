@@ -25,3 +25,4 @@ endif
 " Theme
 colorscheme desert
 
+let g:netrw_liststyle=1

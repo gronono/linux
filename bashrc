@@ -9,4 +9,9 @@ if [ -d $SCRIPT_DIR ]; then
   done
   unset i
 fi
-eval $(thefuck --alias)
+
+hash thefuck &> /dev/null
+if [ $? -eq 0 ]; then
+  eval $(thefuck --alias)
+fi
+

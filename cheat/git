@@ -1,0 +1,9 @@
+# Annulation du dernier commit local
+git reset HEAD~1
+
+# Suppression branche
+git branch -d <local-branch>
+git push origin --delete <remote-branch>
+
+# Renommer la branche locale courante
+git branch -m <newname>

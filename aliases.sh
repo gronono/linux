@@ -48,6 +48,11 @@ alias igrep='grep -i'
 # uname
 alias uname='uname -a'
 
+# fmkdir
+function fmkdir() {
+	command mkdir $1 && cd $1
+}
+
 # history
 history() {
   if [ $# == 0 ]; then
@@ -101,5 +106,12 @@ pathprepend() {
 			PATH="$ARG${PATH:+":$PATH"}"
 		fi
 	done
+}
+
+# GIT
+alias develop='git checkout develop'
+alias master='git checkout master'
+ignore() {
+	echo "$1" >> .gitignore 
 }
 

@@ -1,6 +1,10 @@
 export EDITOR="vim"
 pathprepend $HOME/bin
 
+if [ ! -d $HOME/bin ]; then
+	mkdir $HOME/bin
+fi
+
 if [ ! -e $HOME/bin/powerline-shell.py ]; then
 	ln -sf $HOME/linux/powerline-shell/powerline-shell.py $HOME/bin
 fi

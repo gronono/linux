@@ -9,6 +9,9 @@ alias la='ls -a'
 alias lla='ll -a'
 alias l='ls'
 
+# lsmod
+alias lsmod='lsmod | sort'
+
 # human
 alias df='df -h'
 alias du='du -h'

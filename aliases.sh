@@ -48,9 +48,6 @@ alias ifconfig='/sbin/ifconfig'
 # grep
 alias igrep='grep -i'
 
-# uname
-alias uname='uname -a'
-
 # fmkdir
 function fmkdir() {
 	command mkdir $1 && cd $1
